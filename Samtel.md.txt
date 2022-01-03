@@ -1,8 +1,7 @@
-- La solucion se encuentra dividida en un solo proyecto la generacion del api se da mediante el proyecto llamado Samtel el cual 
-  depende de dos proyectos mas
+- El proyecto tiene donde expone el proyecto se llama SAMTEL
 
-- El consumo del proyecto se llama SamtelFront y depende de dos proyectos mas
+- El proyecto donde consume el web api es SamtelFront
 
-- Para correr el proyecto es importante primero correr el proyecto Samtel
+- El proyecto tiene su base de datos.
 
 	

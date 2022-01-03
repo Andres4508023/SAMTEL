@@ -1,0 +1,13 @@
+C:\Code\SAMTEL\SamtelFront\SamtelFront\LibServices\bin\Debug\netcoreapp3.1\LibServices.deps.json
+C:\Code\SAMTEL\SamtelFront\SamtelFront\LibServices\bin\Debug\netcoreapp3.1\LibServices.dll
+C:\Code\SAMTEL\SamtelFront\SamtelFront\LibServices\bin\Debug\netcoreapp3.1\LibServices.pdb
+C:\Code\SAMTEL\SamtelFront\SamtelFront\LibServices\bin\Debug\netcoreapp3.1\Domain.dll
+C:\Code\SAMTEL\SamtelFront\SamtelFront\LibServices\bin\Debug\netcoreapp3.1\Domain.pdb
+C:\Code\SAMTEL\SamtelFront\SamtelFront\LibServices\obj\Debug\netcoreapp3.1\LibServices.csproj.AssemblyReference.cache
+C:\Code\SAMTEL\SamtelFront\SamtelFront\LibServices\obj\Debug\netcoreapp3.1\LibServices.GeneratedMSBuildEditorConfig.editorconfig
+C:\Code\SAMTEL\SamtelFront\SamtelFront\LibServices\obj\Debug\netcoreapp3.1\LibServices.AssemblyInfoInputs.cache
+C:\Code\SAMTEL\SamtelFront\SamtelFront\LibServices\obj\Debug\netcoreapp3.1\LibServices.AssemblyInfo.cs
+C:\Code\SAMTEL\SamtelFront\SamtelFront\LibServices\obj\Debug\netcoreapp3.1\LibServices.csproj.CoreCompileInputs.cache
+C:\Code\SAMTEL\SamtelFront\SamtelFront\LibServices\obj\Debug\netcoreapp3.1\LibServices.csproj.CopyComplete
+C:\Code\SAMTEL\SamtelFront\SamtelFront\LibServices\obj\Debug\netcoreapp3.1\LibServices.dll
+C:\Code\SAMTEL\SamtelFront\SamtelFront\LibServices\obj\Debug\netcoreapp3.1\LibServices.pdb

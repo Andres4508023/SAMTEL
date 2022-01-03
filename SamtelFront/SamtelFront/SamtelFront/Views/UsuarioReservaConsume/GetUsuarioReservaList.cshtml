@@ -1,0 +1,104 @@
+﻿@model Domain.UsuarioReservaView
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <title>Test</title>
+</head>
+<body>
+    <div class="container">
+        <img src="~/images/samtel.png" class="img-circle">
+    </div>
+
+    <div class="container" style="width:100%;">
+        @*<form asp-action="Test">*@
+        <form id="GetUsuarioReservaList">
+            <div class="row">
+                <div class="col-sm-2">
+
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label asp-for="FechaEntrada" class="control-label"></label>
+                        <input asp-for="FechaEntrada" class="form-control" />
+                        <span asp-validation-for="FechaEntrada" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label asp-for="FechaSalida" class="control-label"></label>
+                        <input asp-for="FechaSalida" class="form-control" />
+                        <span asp-validation-for="FechaSalida" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label class="control-label"></label>
+                        <input type="submit" value="Buscar" class="btn btn-primary" onclick="ValidarFechas()" />
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <br />
+        <div>
+            @Html.Partial("ReservaList.cshtml", (List<Domain.UsuarioReservaView>)ViewBag.List)
+        </div>
+
+        <a asp-action="CreateUsuarioReserva" class="btn btn-primary">
+            New
+            <i class="glyphicon glyphicon-home"></i>
+        </a>
+    </div>
+    <script>
+
+        function ValidarFechas() {
+            debugger;
+            var FechaEntrada = document.getElementById("FechaEntrada").value;
+            var FechaSalida = document.getElementById("FechaSalida").value;
+
+            if (Date.parse(FechaSalida) < Date.parse(FechaEntrada)) {
+                alert('La fecha final debe ser mayor a la fecha inicial');
+            }
+            else
+            {
+                debugger;
+                var data = $("#GetUsuarioReservaList").serialize();
+
+                $.ajax({
+
+                    type: 'GET',
+                    url: '/UsuarioReservaConsume/GetUsuarioReservaList',
+                    contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
+                    data: data,
+                    success: function (result) {
+                        swal({
+                            title: 'Busqueda exitosa!',
+                            icon: 'success'
+                        })
+                        //alert('Successfully received Data ');
+                        //console.log(result);
+                    },
+                    error: function () {
+                        alert('Failed to receive the Data');
+                        console.log('Failed ');
+                    }
+                })
+
+            }
+        }
+
+    </script>
+</body>
+
+</html>

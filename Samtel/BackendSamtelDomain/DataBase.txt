@@ -1,0 +1,1 @@
+﻿Scaffold-Dbcontext "Server=DESKTOP-95OPKV9;Database=Samtel; Integrated Security=True" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Domain -f 
